@@ -1,20 +1,12 @@
-//import userData from "../../userData.json";
 import css from "./Profile.module.css";
-const Profile = ({
-  username,
-  tag,
-  location,
-  avatar = "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-  stats,
-}) => {
-  console.log(username);
+const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <div className={css.userProfile}>
       <div className={css.userData}>
-        <img className={css.profileImg} src={avatar} alt="User avatar" />
-        <p className={css.userName}>{username}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+        <img className={css.userImg} src={image} alt="User avatar" />
+        <p className={css.userName}>{name}</p>
+        <p className={css.userText}>{tag}</p>
+        <p className={css.userText}>{location}</p>
       </div>
 
       <ul className={css.userStats}>
