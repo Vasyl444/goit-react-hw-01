@@ -1,0 +1,35 @@
+.table {
+  margin: 25px auto 0;
+  width: 60vw;
+  border: 2px solid black;
+  border-spacing: 0;
+  font-size: larger;
+}
+.tableThead {
+  background-color: rgb(44, 42, 42);
+  color: white;
+  height: 40px;
+}
+.tableTitle {
+  font-weight: 600;
+}
+.tableThead > tr :not(:last-child) {
+  border-right: 2px solid black;
+}
+.tableItem {
+  text-transform: capitalize;
+  border-top: 2px solid black;
+  height: 40px;
+}
+.tableTbody :not(:last-child) {
+  border-right: 2px solid black;
+}
+.tableTr:nth-child(2n) {
+  background-color: rgb(177, 174, 174);
+}
+.tableTr :not(:first-child) {
+  text-align: center;
+}
+.tableTr :first-child {
+  padding-left: 14%;
+}
